@@ -1,3 +1,29 @@
+/* Fonts these are used in this website */
+@font-face{
+    /* This is for paragraph and lable value*/
+    font-family: 'Recoleta-RegularDEMO';
+    src: url(../card/fonts/recoleta/Recoleta-RegularDEMO.otf);
+}
+@font-face{
+    /* This is for Lable */
+    font-family: 'QaskinBlackPersonalUse-5wLG';
+    src: url(../card/fonts/qaskin-font/QaskinBlackPersonalUse-5wLG.ttf);
+}
+@font-face{
+    /* This is for logo */
+    font-family: 'QaskinBlackPersonalUse-67XD';
+    src: url(../card/fonts/qaskin-font/QaskinWhitePersonalUse-67XD.ttf);
+}
+@font-face{
+    /* This is for logo */
+    font-family: 'Fenix-Regular';
+    src: url(../card/fonts/Fenix/Fenix-Regular.ttf);
+}
+/* End of fonts */
+
+
+
+/* Main Styling start from here */
 *{
     margin: 0;
     padding: 0;
@@ -7,10 +33,37 @@ body{
     overflow-x: hidden;
     background-color: #f2f3f5;
 }
+.topHeader{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 25px;
+    padding-left: 10px;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    justify-content: flex-start;
+    background: linear-gradient(to bottom,#f2f3f5,#fff);
+}
+.topHeader span{
+    margin: 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.62rem;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    font-family: 'Recoleta-RegularDEMO';
+}
+.topHeader span strong{
+    font-size: 1.7rem;
+    color: goldenrod;
+    font-family: 'QaskinBlackPersonalUse-5wLG';  
+}
 .header{
     width: 100vw;
     height: 550px;
     position: relative;
+    background-color: red;
 }
 .header img{
     width: 100%;
@@ -34,13 +87,14 @@ body{
     transform: translate(-50%,-50%);
 }
 .header div h1{
-    width: 250px;
     padding: 5px;
     color: white;
     cursor: pointer;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    min-width: 250px;
     text-shadow: 1px 1px 1px #555;
+    font-family: 'QaskinBlackPersonalUse-67XD';
 }
 .header h1 span:nth-child(3),.header h1 span:nth-child(4){
     color: gold;
@@ -51,7 +105,7 @@ body{
     color: white;
     font-size: 1.2rem;
     text-align: justify;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Recoleta-RegularDEMO';
 }
 .header div#headerInfo div{
     margin: 10px;
@@ -97,7 +151,7 @@ body{
     outline: none;
 }
 .header nav ul img{
-    width: 50px;
+    margin: 5px;
     display: none;
 }
 .header nav ul li{
@@ -106,20 +160,41 @@ body{
 .header nav ul li a{
     color: white;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     text-decoration: none;
+    font-family: 'Fenix-Regular';
 }
 .header nav ul li a:hover{
     color: gold;
     transition: 0.5s ease-in-out;
 }
+
+/* section */
+section{
+    width: 100vw;
+    height: 500px;
+    background-color: #f2f3f5;
+}
+/* End of the section */
+
+
+/* End of the main styling */
+
+/* Responsive layout Styling */
 @media screen and (max-width:864px){
     .header nav ul li{
         display: none;
     }
     .header nav ul img{
+        width: 40px;
+        height: 35px;
         display: inline-block;
+        transition: transform 1s ease-in-out , margin 0.1s linear;
+    }
+    .header nav ul img:hover{
+        margin: 10px;
+        transform: rotate(180deg) scale(1.4);
     }
     .header nav{
         box-shadow: none;
@@ -127,15 +202,25 @@ body{
     }
     .header div#headerInfo{
         left: 23%;
+        top: 50%;
     }
 }
 @media screen and (max-width:750px){
+    .topHeader span{
+        font-size: 0.5rem;
+    }
+    .topHeader span strong{
+        font-size: 1.2rem;
+    }
+    .header{
+        height: 200px;
+    }
     .header>img{
         height: 300px;
     }
     .header div#headerInfo{
-        top: 30%;
         left: 25%;
+        top: 80%;
     }
     .header div#headerInfo h1{
         margin: 0px;
@@ -148,5 +233,24 @@ body{
     .header div#headerInfo div button{
         font-size: 10px;
         padding: 5px 10px;
+    }
+}
+@media screen and (max-width:500px){
+    .topHeader{
+        justify-content: center;
+    }
+    .header>img{
+        height: 200px;
+    }
+    .header div#headerInfo{
+        top: 55% !important;
+        left: 25%;
+    }
+    .header div#headerInfo p{
+        font-size: 9px;
+    }
+    .header div#headerInfo div button{
+        font-size: 8px;
+        padding: 3px 5px;
     }
 }
