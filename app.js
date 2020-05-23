@@ -1,7 +1,7 @@
 onscroll = ()=>{
-    // if(scrollY > -48){
-    //     nav.style.position="fixed";
-    //     nav.style.top="0px";
-    //     nav.style.backgroundColor="#333";
-    // }
+    if(scrollY > 200){
+        gotop.style.display='block';
+    }else{
+        gotop.style.display='none';
+    }
 }

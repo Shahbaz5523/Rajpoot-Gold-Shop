@@ -24,6 +24,7 @@
 
 
 /* Main Styling start from here */
+
 *{
     margin: 0;
     padding: 0;
@@ -32,6 +33,21 @@
 body{
     overflow-x: hidden;
     background-color: #f2f3f5;
+}
+#gotop{
+    z-index: 1;
+    right: 10px;
+    width: 40px;
+    bottom: 10px;
+    height: 40px;
+    border: none;
+    outline: none;
+    display: none;
+    position: fixed;
+    border-radius: 50%;
+    background-color: goldenrod;
+    background: radial-gradient(#fff,gold,goldenrod);
+    box-shadow: 0px 0px 10px 0px #999 , 0px 0px 20px 0px #f2f2f2;
 }
 .topHeader{
     width: 100%;
@@ -133,12 +149,13 @@ body{
     background-color: gold;
     background: linear-gradient(360deg,gold,goldenrod);
 }
-.header nav{
+.header nav{    
+    top:0;
+    z-index: 11;
     width: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    transition: 1s ease-in-out;
 }
 .header nav ul{
     display: flex;
@@ -173,7 +190,7 @@ body{
 /* section */
 section{
     width: 100vw;
-    height: 500px;
+    height: 1000px;
     background-color: #f2f3f5;
 }
 /* End of the section */
