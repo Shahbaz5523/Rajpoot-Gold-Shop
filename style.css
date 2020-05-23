@@ -50,7 +50,7 @@ body{
     box-shadow: 0px 0px 10px 0px #999 , 0px 0px 20px 0px #f2f2f2;
 }
 .topHeader{
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     min-height: 25px;
@@ -190,9 +190,97 @@ body{
 /* section */
 section{
     width: 100vw;
-    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     background-color: #f2f3f5;
+    background: linear-gradient(to bottom,#f2f3f5,#fff);
+    /* box-shadow: 0px 0px 10px 0px #999 inset, 0px 0px 20px 0px #f2f2f2 inset; */
 }
+section #infoBox{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+section #infoBox h1{
+    width: 350px;
+    padding: 10px;
+    margin: 30px 10px;
+    letter-spacing: 2px;
+    color: rgb(78, 94, 109);
+    font-family: 'Fenix-Regular';
+    border-top: 2px dashed slategray;
+    border-bottom: 2px dashed slategray;
+}
+section #infoBox p , #infoBox p a{
+    margin: 30px;
+    color: slategray;
+    text-align: center;
+}
+
+#slider{
+    width: 100vw;
+    height: 460px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+#slider:hover #leftBtn, #slider:hover #rightBtn{
+    visibility: visible;
+}
+#slider>div{
+    width: 100px;
+    height: 460px;    
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+#leftBtn , #rightBtn{
+    width: 60px;
+    height: 60px;
+    visibility: hidden;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.6s;
+    transform: scale(0.8);  
+    background: rgb(255, 255, 255); 
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.74);
+}
+#leftBtn:hover , #rightBtn:hover{ 
+    transform: scale(1);
+}
+#leftBtn::after , #rightBtn::after{
+    content: '<';
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    color: goldenrod;
+    position: absolute;
+    font-family: monospace;
+    transform: translate(-50%,-50%);
+}
+#rightBtn::after{
+    content: '>';
+}
+
 /* End of the section */
 
 
@@ -269,5 +357,16 @@ section{
     .header div#headerInfo div button{
         font-size: 8px;
         padding: 3px 5px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #slider{
+        height: 300px;
+    }
+}
+@media screen and (max-width:300px){
+    #slider{
+        height: 150px;
     }
 }
