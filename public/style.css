@@ -2,22 +2,22 @@
 @font-face{
     /* This is for paragraph and lable value*/
     font-family: 'Recoleta-RegularDEMO';
-    src: url(../card/fonts/recoleta/Recoleta-RegularDEMO.otf);
+    src: url(fonts/recoleta/Recoleta-RegularDEMO.otf);
 }
 @font-face{
     /* This is for Lable */
     font-family: 'QaskinBlackPersonalUse-5wLG';
-    src: url(../card/fonts/qaskin-font/QaskinBlackPersonalUse-5wLG.ttf);
+    src: url(fonts/qaskin-font/QaskinBlackPersonalUse-5wLG.ttf);
 }
 @font-face{
     /* This is for logo */
     font-family: 'QaskinBlackPersonalUse-67XD';
-    src: url(../card/fonts/qaskin-font/QaskinWhitePersonalUse-67XD.ttf);
+    src: url(fonts/qaskin-font/QaskinWhitePersonalUse-67XD.ttf);
 }
 @font-face{
     /* This is for logo */
     font-family: 'Fenix-Regular';
-    src: url(../card/fonts/Fenix/Fenix-Regular.ttf);
+    src: url(fonts/Fenix/Fenix-Regular.ttf);
 }
 /* End of fonts */
 
