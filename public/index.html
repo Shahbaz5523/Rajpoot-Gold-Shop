@@ -9,7 +9,7 @@
 <body>
 
     <button id="gotop">
-        <a href="#home" style="text-decoration: none; color: #333; font-family: 'Recoleta-RegularDEMO'; font-weight: bolder;">Up</a>
+        <a href="#home" style="text-decoration: none; color: #555; font-weight: bolder;">Up</a>
     </button>
 
     <!-- TopHeader -->
@@ -19,6 +19,7 @@
         <span><strong>Phone:</strong> 03031236547</span>
         <span><strong>Email:</strong> GoldShop20@gmail.com</span>
     </div>
+    <div id="cartContainer"><img src="imgs/cart/addToCart.svg" alt="cart"><p id="countItems" style="font-family: Arial; color: #999; font-size: larger; font-weight: bolder; margin: 5px;">0</p></div>
 
     <!-- Header with nav -->
     <div class="header" id="header">
@@ -58,6 +59,88 @@
             <img id="sliderBackground4" style="width: 0%; height: 100%; object-fit: contain;  transition: all 1.4s ease-in-out;"  src="imgs/models/4.jpg" alt="img not found">                
             <div class="right"><div id="rightBtn" onclick="right()"></div></div>
         </div>
+        <!-- end of silder -->
+
+        <!-- Rings -->
+        <div id="ringsBox">
+            <h1>~Rings~</h1>
+            <div>
+                <div class="card" style="background-color: #ebecee;">
+                    <img class="img" src="imgs/rings/white gold/5.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 30000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong style="color: white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);">White</strong><strong> Gold</strong></p></div>
+                    <button style="background-color: #ebecee;" onclick="addToCart()">Add To Cart</button>
+                </div>
+                <div class="card" style="background-color: #f4f5f7;">
+                    <img class="img" src="imgs/rings/white gold/3.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 30000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong style="color: white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);">White</strong><strong> Gold</strong></p></div>
+                    <button style="background-color: #f4f5f7;" onclick="addToCart()">Add To Cart</button>
+                </div>
+                <div class="card" style="background-color: #ecedeb">
+                    <span><a href="rings.html">More Rings</a></span>
+                    <img class="img" src="imgs/rings/white gold/2.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 30000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong style="color: white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);">White</strong><strong> Gold</strong></p></div>
+                    <button style="background-color: #ecedeb;" onclick="addToCart()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- End of Rings -->
+
+        <!-- Bangles -->
+        <div id="ringsBox">
+            <h1>~Bangles~</h1>
+            <div>
+                <div class="card" >
+                    <img class="img" src="imgs/bangles/bangles1.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 30000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong> Gold</strong></p></div>
+                    <button  onclick="addToCart()">Add To Cart</button>
+                </div>
+                <div class="card" >
+                    <img class="img" src="imgs/bangles/bangles2.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 30000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong> Gold</strong></p></div>
+                    <button  onclick="addToCart()">Add To Cart</button>
+                </div>
+                <div class="card">
+                    <span style="width: 120px;"><a href="rings.html">More Bangles</a></span>
+                    <img class="img" src="imgs/bangles/bangles3.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 30000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong> Gold</strong></p></div>
+                    <button  onclick="addToCart()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- End of Bangles -->
+
+        <!-- Necklaces -->
+        <div id="ringsBox">
+            <h1>~Nacklaces~</h1>
+            <div>
+                <div class="card" >
+                    <img class="img" src="imgs/necklace/necklace1.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 30000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong> Gold</strong></p></div>
+                    <button  onclick="addToCart()">Add To Cart</button>
+                </div>
+                <div class="card" >
+                    <img class="img" src="imgs/necklace/nacklace6.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 30000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong> Gold</strong></p></div>
+                    <button  onclick="addToCart()">Add To Cart</button>
+                </div>
+                <div class="card">
+                    <span style="width: 120px;"><a href="rings.html">More Bangles</a></span>
+                    <img class="img" src="imgs/necklace/necklace2.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 30000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong> Gold</strong></p></div>
+                    <button  onclick="addToCart()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- End of Bangles -->
     </section>
 
     <script src="app.js"></script>

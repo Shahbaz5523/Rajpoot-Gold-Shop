@@ -1,3 +1,9 @@
+let addToCart = ()=>{
+    countItems.innerText = Number(countItems.innerText) + 1;
+}
+
+
+// These for slider gotop button
 onscroll = ()=>{
     if(scrollY > 200){
         gotop.style.display='block';
