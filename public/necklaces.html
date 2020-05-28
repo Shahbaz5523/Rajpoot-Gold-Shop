@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Rings</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <button id="gotop">
+        <a href="#home" style="text-decoration: none; color: #555; font-weight: bolder;">Up</a>
+    </button>
+
+    <!-- TopHeader -->
+
+    <div class="topHeader" id="home">
+        <span><strong>Since:</strong> 1998-2020</span>
+        <span><strong>Phone:</strong> 03031236547</span>
+        <span><strong>Email:</strong> GoldShop20@gmail.com</span>
+    </div>
+    <div id="cartContainer">
+        <img src="imgs/cart/addToCart.svg" alt="cart">
+        <p id="countItems" style="font-family: Arial; color: #999; width: 24px; height: 24px; text-align: center; font-size: medium; background-color: gold; color: black; border-radius: 50%; font-weight: bolder; margin: 5px; padding-top: 4px;">0</p>
+    </div>
+
+    <!-- Header with nav -->
+    <div class="header" id="header">
+        <nav id="nav">
+            <ul>
+                <img src="menu-2.ico" alt="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rings.html#infoBox">Rings</a></li>
+                <li><a href="bangles.html#infoBox">Bangles</a></li>
+                <li><a href="#home" id="home">Necklaces</a></li>
+                <li><a href="about.html#infoBox">About Us</a></li>
+                <li><a href="#home">Contact Us</a></li>
+            </ul>
+        </nav>
+        <img src="3.jpg" alt="img not found">
+        <div id="headerInfo">
+            <h1><span>Rajpoot</span><br><span>Gold</span> <span>Shop</span></h1>
+            <p>We Have Beautiful Jewellery Designs.</p>
+            <div>
+                <button>Buy Items</button>
+                <button>More Info</button>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div id="infoBox">
+            <img src="boder.png" alt="img not found">
+            <h1>Buy New <span style="color: goldenrod; border-top: none;">Necklaces</span></h1>
+            <img style="transform: rotate(90deg); margin-right: 15px;" src="boder.png" alt="img not found">
+        </div>
+        <div class="info">
+            <select name="sort" id="sortBy">
+                <option value="less">Sort By</option>
+                <option value="less">Less Price</option>
+                <option value="Max">Max Price</option>
+                <option value="Type">By Type</option>
+            </select>
+            <p><span style="color: white; font-size: x-large; font-family: 'Fenix-Regular';">Jewellery Design</span></p>
+            <p>Available Items <span style="color: white; font-family: arial; font-size: medium;">: 6</span></p>
+        </div>
+        <!-- Rings -->
+            <div id="ringsBox">
+            <div>
+                <div class="card" >
+                    <span style="width: 120px; padding: 8px; box-shadow: 0px 0px 2px 0px gray; font-size: small;"><strong style="font-size: 15px;">Price: &nbsp;</strong> RS 9000</span>
+                    <span style="background-color: transparent; top: 0; right: -250px; cursor: pointer;"><img id="heart" onclick="heartChanged(event)" class="black" style="width: 40px;" src="imgs/heart/icons8-heart-64 (2).png" alt=""></span>
+                    <img class="img" src="imgs/necklace/whie/1.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 9000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong style="color: white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);">White</strong><strong> Gold</strong></p></div>
+                    <button  onclick="addToCart()">Add To Cart</button>
+                </div>
+                <div class="card" >
+                    <span style="width: 120px; padding: 8px; box-shadow: 0px 0px 2px 0px gray; font-size: small;"><strong style="font-size: 15px;">Price: &nbsp;</strong> RS 17000</span>
+                    <span style="background-color: transparent; top: 0; right: -250px; cursor: pointer;"><img id="heart" onclick="heartChanged(event)" class="black" style="width: 40px;" src="imgs/heart/icons8-heart-64 (2).png" alt=""></span>
+                    <img class="img" src="imgs/necklace/whie/2.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 17000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong style="color: white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);">White</strong><strong> Gold</strong></p></div>
+                    <button  onclick="addToCart()">Add To Cart</button>
+                </div>
+                <div class="card">
+                    <span style="background-color: transparent; top: 0; right: -250px; cursor: pointer;"><img id="heart" onclick="heartChanged(event)" class="black" style="width: 40px;" src="imgs/heart/icons8-heart-64 (2).png" alt=""></span>
+                    <span style="width: 120px; box-shadow: 0px 0px 3px 0px gray;"><a href="necklaces.html">More Necklace</a></span>
+                    <img class="img" src="imgs/necklace/whie/3.jpg" alt="img not found">
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 20000</p></div>
+                    <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong style="color: white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);">White</strong><strong> Gold</strong></p></div>
+                    <button  onclick="addToCart()">Add To Cart</button>
+                </div>
+                <h1 style="width: 100vw;"><---Gold Desgin---></h1>
+                    <br>
+                    <div class="card" >
+                        <span style="width: 120px; padding: 8px; box-shadow: 0px 0px 2px 0px gray; font-size: small;"><strong style="font-size: 15px;">Price: &nbsp;</strong> RS 9000</span>
+                        <span style="background-color: transparent; top: 0; right: -250px; cursor: pointer;"><img id="heart" onclick="heartChanged(event)" class="black" style="width: 40px;" src="imgs/heart/icons8-heart-64 (2).png" alt=""></span>
+                        <img class="img" src="imgs/necklace/whie/gold-necklace-witn-precious-stones-600w-342252050.webp" alt="img not found">
+                        <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 9000</p></div>
+                        <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong> Gold</strong></p></div>
+                        <button  onclick="addToCart()">Add To Cart</button>
+                    </div>
+                    <div class="card" >
+                        <span style="width: 120px; padding: 8px; box-shadow: 0px 0px 2px 0px gray; font-size: small;"><strong style="font-size: 15px;">Price: &nbsp;</strong> RS 17000</span>
+                        <span style="background-color: transparent; top: 0; right: -250px; cursor: pointer;"><img id="heart" onclick="heartChanged(event)" class="black" style="width: 40px;" src="imgs/heart/icons8-heart-64 (2).png" alt=""></span>
+                        <img class="img" src="imgs/necklace/whie/many-chains-golden-metallic-necklace-600w-380660557.webp" alt="img not found">
+                        <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 17000</p></div>
+                        <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong> Gold</strong></p></div>
+                        <button  onclick="addToCart()">Add To Cart</button>
+                    </div>
+                    <div class="card">
+                        <span style="background-color: transparent; top: 0; right: -250px; cursor: pointer;"><img id="heart" onclick="heartChanged(event)" class="black" style="width: 40px;" src="imgs/heart/icons8-heart-64 (2).png" alt=""></span>
+                        <span style="width: 120px; padding: 8px; box-shadow: 0px 0px 2px 0px gray; font-size: small;"><strong style="font-size: 15px;">Price: &nbsp;</strong> RS 20000</span>
+                        <img class="img" src="imgs/necklace/1.png" alt="img not found">
+                        <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/price.png" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-size: 15px"><strong>RS:</strong> 20000</p></div>
+                        <div style="cursor: pointer; margin-left: 25px; display: flex; align-items: center;"><img src="imgs/cart/shoppingBag.svg" alt="price" style="width: 25px; height: 25px;"><p style="margin-left: 15px; color: goldenrod; font-family: Arial; font-size: 15px"><strong> Gold</strong></p></div>
+                        <button  onclick="addToCart()">Add To Cart</button>
+                    </div>
+            </div>
+        </div>
+        <!-- End of Rings -->
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
