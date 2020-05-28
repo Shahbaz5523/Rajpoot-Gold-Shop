@@ -368,7 +368,7 @@ section #infoBox p , #infoBox p a{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); 
 }
 #ringsBox>div .card:hover .img{
-    height: 230px;
+    height: 290px;
     transform: translateY(-10%);
     /* clip-path: circle(70% at 50% 0); */
 }
