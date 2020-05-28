@@ -9,3 +9,13 @@ onscroll = ()=>{
         gotop.style.display='none';
     }
 }
+
+let heartChanged = (e)=>{
+    if(e.target.classList[0] == "black"){
+        e.target.classList.remove('black');
+        e.target.src="imgs/heart/icons8-heart-64.png";
+    }else{
+        e.target.src="imgs/heart/icons8-heart-64 (2).png";
+        e.target.classList.add('black');
+    }
+}
