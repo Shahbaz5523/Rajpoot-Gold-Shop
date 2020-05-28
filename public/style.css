@@ -215,8 +215,11 @@ section #infoBox{
     padding: 10px;
     text-align: center;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section #infoBox img{
+    width: 150px;
 }
 section #infoBox h1{
     width: 350px;
@@ -247,7 +250,7 @@ section #infoBox p , #infoBox p a{
 #slider:hover #leftBtn, #slider:hover #rightBtn{
     visibility: visible;
 }
-#slider>div{
+#slider .left, #slider .right{
     width: 100px;
     height: 460px;    
     display: flex;
@@ -290,6 +293,33 @@ section #infoBox p , #infoBox p a{
     content: '>';
 }
 
+/* Info about Rings*/
+
+.info{
+    width: 97vw;
+    display: flex;
+    margin-top: 50px;
+    font-size: large;
+    padding: 10px 10px;
+    color: goldenrod;
+    margin-left: -13px;
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 50px;
+    background-color: #333;
+    justify-content: space-between;
+    font-family: 'Recoleta-RegularDEMO';
+    background: linear-gradient(#555,#222);
+}
+.info #sortBy{
+    outline: none;
+    cursor: pointer;
+    padding: 3px 15px;
+    border-radius: 50px;
+    font-family: cursive;
+    background-color: white;
+}
+
 /* End of the section */
 
 
@@ -301,10 +331,15 @@ section #infoBox p , #infoBox p a{
 #ringsBox h1{
     padding: 10px;
     font-size: 3rem;
-    margin: 30px 10px;
-    letter-spacing: 2px;
+    margin-top: 10px;
     font-family: 'QaskinBlackPersonalUse-67XD';
     text-shadow: 2px 2px 2px gold,6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+#ringsBox p{
+    margin: 10px;
+    color: slategray;
+    text-align: center;
+    font-family: 'Fenix-Regular';
 }
 #ringsBox>div{ 
     width: 100vw;
@@ -317,10 +352,10 @@ section #infoBox p , #infoBox p a{
 }
 #ringsBox>div .card{
     margin: 50px;
-    width: 300px;
-    height: 350px;
+    height: 400px;
     display: flex;
     color: black;
+    min-width: 300px;
     text-align: left;
     overflow: hidden;
     position: relative;
@@ -333,8 +368,8 @@ section #infoBox p , #infoBox p a{
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); 
 }
 #ringsBox>div .card:hover .img{
-    height: 200px;
-    transform: translateY(-78%);
+    height: 230px;
+    transform: translateY(-10%);
     /* clip-path: circle(70% at 50% 0); */
 }
 #ringsBox>div .card p{
@@ -358,25 +393,31 @@ section #infoBox p , #infoBox p a{
     font-family: 'Recoleta-RegularDEMO';
 }
 #ringsBox>div .card .img{
+    top: 0;
     width: 300px;
     z-index: 111;
     height: 350px;
     position: absolute;
     border-radius: 5px;
-    transition: all 0.9s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#fixedCard>img{
+    height: 280px !important;
+    transform: translateY(-10%);
 }
 #ringsBox>div .card button{
     width: 100%;
-    height: 60px;
+    height: 45px;
     border: none;
     outline: none;
+    color: white;
     font-size: 1rem;
-    color: goldenrod;
     border-radius: 5px;
     position: relative;
     font-weight: bolder;
-    background-color: white;
+    background-color: gold;
     font-family: 'Fenix-Regular';
+    background: linear-gradient(gold,goldenrod);
 }
 #ringsBox>div .card button::before{
     content: '';
@@ -394,6 +435,7 @@ section #infoBox p , #infoBox p a{
     cursor: pointer;
     text-decoration: underline;
     transition:  all 0.5s ease-in-out;
+    background: linear-gradient(to top,gold,goldenrod);
 }
 /* End of the main styling */
 
@@ -429,14 +471,14 @@ section #infoBox p , #infoBox p a{
         font-size: 1.2rem;
     }
     .header{
-        height: 200px;
+        height: 300px;
     }
     .header>img{
         height: 300px;
     }
     .header div#headerInfo{
         left: 25%;
-        top: 80%;
+        top: 50%;
     }
     .header div#headerInfo h1{
         margin: 0px;
@@ -451,9 +493,32 @@ section #infoBox p , #infoBox p a{
         padding: 5px 10px;
     }
 }
+@media screen and (max-width:600px){
+    section #infoBox h1{
+        width: 200px;
+        font-size: 1rem;
+    }
+    section #infoBox img{
+        width: 80px;
+    }
+    .info{
+        padding:7px;
+        font-size: small;
+    }
+    .info #sortBy{
+        padding: 3px;
+        font-size: 10px;
+    }
+    .info p span{
+        font-size: medium !important;
+    }
+}
 @media screen and (max-width:500px){
     .topHeader{
         justify-content: center;
+    }
+    .header{
+        height: 200px;
     }
     .header>img{
         height: 200px;
@@ -476,8 +541,21 @@ section #infoBox p , #infoBox p a{
         height: 300px;
     }
 }
+@media screen and (max-width:332px){
+    section #infoBox{
+        padding-top: 0px;
+        margin: 0px !important;
+    }
+    section #infoBox h1{
+        width: 100px;
+        font-size: 0.5rem;
+    }
+    section #infoBox img{
+        width: 50px;
+    }
+}
 @media screen and (max-width:300px){
     #slider{
         height: 150px;
     }
-}
+}   
