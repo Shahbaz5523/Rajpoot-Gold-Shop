@@ -481,9 +481,9 @@ footer img:nth-child(4){
 }   
 footer>div{
     z-index: 1;
+    width: 300px;
     margin: 10px;
     height: 330px;
-    max-width: 300px;
     text-align: left;
     border: 1px dashed gold;
     box-shadow: 0px 0px 5px 0px gold inset;
@@ -510,12 +510,48 @@ footer>div>li{
 
 /* Responsive layout Styling */
 @media screen and (max-width:864px){
+    .header nav ul{
+        height: 0px;
+        z-index: 1111;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 1s ease-in-out;
+    }
+    .shownav{
+        z-index: 111;
+        height: 500px !important;
+    }
     .header nav ul li{
-        display: none;
+        width: 100%;
+        z-index: 11;
+        margin: 20px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+    }
+    .header nav ul li:hover svg{
+        transform: scale(0);
+    } 
+    .header nav ul li svg{
+        width: 30px;
+        height: 30px;
+        transition: 1s;
+        margin-top: -10px;
+        transform: scale(1);
+        vertical-align: middle;
+    }
+    .header nav ul li a{
+        font-size: larger;
     }
     .header nav ul img{
+        left: 0px;
         width: 40px;
         height: 35px;
+        z-index: 1111;
+        position: absolute;
         display: inline-block;
         transition: transform 1s ease-in-out , margin 0.1s linear;
     }
@@ -524,13 +560,28 @@ footer>div>li{
         transform: rotate(180deg) scale(1.4);
     }
     .header nav{
+        z-index: 35345;
         box-shadow: none;
-        background-color: transparent;
+        position: absolute;
+        background-color: #333;
+    }
+    .header nav::after{
+        top: 45%;
+        left: 50%;
+        opacity: 0.5;
+        color: gold;
+        content: '';
+        font-size: 20vw;
+        position: absolute;
+        font-family: fantasy;
+        text-shadow: 2px 2px 2px white;
+        transform: translate(-50%,-50%);
     }
     .header div#headerInfo{
         left: 23%;
         top: 50%;
     }
+    /* Show nav after content */
 }
 @media screen and (max-width:750px){
     .topHeader span{
@@ -569,6 +620,9 @@ footer>div>li{
     }
     section #infoBox img{
         width: 80px;
+    }
+    footer img{
+        width: 100px;
     }
     .info{
         padding:7px;
@@ -622,9 +676,27 @@ footer>div>li{
     section #infoBox img{
         width: 50px;
     }
+    /* footer img{
+        width: 50px;
+    } */
+    .info{
+        padding: 5px;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+    .info select{
+        padding: 0px !important;
+        font-size: 10px !important;
+    }
+    .info p{
+        font-size: 10px;
+    }
+    .info p span{
+        font-size: 10px !important;
+    }
 }
 @media screen and (max-width:300px){
     #slider{
         height: 150px;
     }
-}   
+}

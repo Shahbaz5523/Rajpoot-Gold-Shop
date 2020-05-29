@@ -19,3 +19,11 @@ let heartChanged = (e)=>{
         e.target.classList.add('black');
     }
 }
+
+menu.onclick=()=>{
+    ul.classList.toggle('shownav');
+}
+
+onmousemove = ()=>{
+    console.log(nav.after)
+}
