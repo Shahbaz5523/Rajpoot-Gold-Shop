@@ -583,6 +583,22 @@ footer>div>li{
     }
     /* Show nav after content */
 }
+@media screen and (max-width:800px){
+    .header{
+        height: 400px;
+    }
+    .header>img{
+        height: 400px;
+    }
+    .header div#headerInfo h1{
+        margin: 0px;
+        font-size: 40px;
+    }
+    .header div#headerInfo p{
+        margin: 0px;
+        font-size: 15px;
+    }
+}
 @media screen and (max-width:750px){
     .topHeader span{
         font-size: 0.5rem;
@@ -698,5 +714,10 @@ footer>div>li{
 @media screen and (max-width:300px){
     #slider{
         height: 150px;
+    }
+}
+@media screen and (max-width:380px){
+    form{
+        transform: scale(0.7);
     }
 }
