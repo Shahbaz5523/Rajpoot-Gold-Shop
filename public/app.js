@@ -22,8 +22,14 @@ let heartChanged = (e)=>{
 
 menu.onclick=()=>{
     ul.classList.toggle('shownav');
+    hover.classList.toggle('shownav');
 }
 
-onmousemove = ()=>{
-    console.log(nav.after)
+let hoverEffect = (e)=>{
+    if(window.innerWidth <= 864){
+        hoverH2.innerText = e.target.innerText;
+    }
+}
+let removeEffect = ()=>{
+        hoverH2.innerText = "";
 }
