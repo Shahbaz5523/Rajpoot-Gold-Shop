@@ -5,6 +5,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/52f08088b2.js" crossorigin="anonymous"></script>
     <style>
         form{
             margin: auto;
@@ -41,6 +42,7 @@
             outline: none;
             border-radius: 5px;
             margin-bottom: 30px;
+            position: relative;
             background-color: #f2f3f5;
             box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3) inset,-3px -3px 3px 1px #fff inset;
         }
@@ -49,6 +51,7 @@
         }
         form button{
             color: #555;
+            cursor: pointer;
             font-size: medium;
             margin-bottom: 0px;
             font-weight: bolder;
@@ -65,7 +68,7 @@
 <body>
 
     <button id="gotop">
-        <a href="#home" style="text-decoration: none; color: #555; font-weight: bolder;">Up</a>
+        <a href="#home" style="text-decoration: none; color: #555; font-weight: bolder;"><i style="font-size: large;" class="fa fa-angle-double-up" aria-hidden="true"></i></a>
     </button>
 
     <!-- TopHeader -->
@@ -88,7 +91,7 @@
             </div>
             <ul id="ul">
                 <img id="menu" src="menu-2.ico" alt="menu">
-                <li onmouseover="hoverEffect(event)" onmouseout="removeEffect()"><i style="color: gold;" class="fas fa-home"></i> <a href="index.html">Home</a></li>
+                <li onmouseover="hoverEffect(event)" onmouseout="removeEffect()"><i style="color: white;" class="fas fa-home"></i> <a href="index.html">Home</a></li>
                 <li onmouseover="hoverEffect(event)" onmouseout="removeEffect()">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 width="16" height="16"
@@ -148,7 +151,7 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
                     <input id="email" name="email" type="email">
                     <label for="sms">Type message here</label>
                     <textarea name="message" id="message" cols="10" rows="5"></textarea>
-                    <button>Send Message</button>
+                    <button>Send Message <i class="fa fa-share-square-o" aria-hidden="true"></i></button>
             </form>
         </div>
         <!-- Map -->
@@ -165,12 +168,15 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         <div>
             <h2>Contact <span style="color: #fff;">Details</span></h2>
                 <li>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
                     <span style="color: #fff;">0303-</span>12345678
                 </li>
                 <li>
+                    <i class="fa fa-phone-alt" aria-hidden="true"></i>
                     <span style="color: white;">041-</span>123456789
                 </li>
                 <li>
+                    <i class="fas fa-envelope-square"></i>
                     <span style="color: white;">GoldShop20</span>@gmail.com
                 </li>
         </div>
