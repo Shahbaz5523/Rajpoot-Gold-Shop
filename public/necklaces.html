@@ -20,9 +20,9 @@
         <span><strong>Phone:</strong> 03031236547</span>
         <span><strong>Email:</strong> GoldShop20@gmail.com</span>
     </div>
-    <div id="cartContainer">
-        <img src="imgs/cart/addToCart.svg" alt="cart">
-        <p id="countItems" style="font-family: Arial; color: #999; width: 24px; height: 24px; text-align: center; font-size: medium; background-color: gold; color: black; border-radius: 50%; font-weight: bolder; margin: 5px; padding-top: 4px;">0</p>
+    <div id="cartContainer"  style="cursor: pointer;">
+        <img id="cartBtn" src="imgs/cart/addToCart.svg" alt="cart">
+        <p id="countItems" style="font-family: Arial; color: #999; width: 24px; height: 24px; text-align: center; font-size: medium; background-color: gold; color: black; border-radius: 50%; font-weight: bolder; margin: 5px; padding-top: 4px;">5</p>
     </div>
 
     <!-- Header with nav -->
@@ -235,6 +235,67 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
         </div>
         <h2 style="z-index: 222; font-size: medium; width: 100%; margin: 15px;">Made By: <span style="color: #fff;">&nbsp; <a href="https://shahbazali-profile.web.app/" target="_blank" style="color: white;">Shahbaz Ali</a></span></h2>
     </footer>
-    <script src="app.js"></script>
+
+    <!-- CartBox -->
+    <div id="cartBox">
+        <!-- Cart Head -->
+        <div id="carthead">
+            <span>Cart Items</span>
+        </div>
+        <div id="closeContainer"><img id="btn" src="imgs/heart/delete.ico" alt="close"></div>
+        <!-- Items in the cart -->
+        <div class="lables">
+            <span>Item</span>
+            <span>Qty</span>
+            <span>Price</span>
+            <span>Total</span>
+            <span>Remove</span>
+        </div>            
+        <div class="itemContainer">
+            <img src="imgs/rings/white gold/2.jpg" alt="img not found">
+            <p id="qty">2</p>
+            <p id="price">10000</p>
+            <p id="total">20000</p>
+            <a href="#">X</a>
+        </div>
+
+        <div class="itemContainer">
+            <img src="imgs/necklace/1.png" alt="img not found">
+            <p id="qty">1</p>
+            <p id="price">20000</p>
+            <p id="total">20000</p>
+            <a href="#">X</a>
+        </div>
+
+        <div class="itemContainer">
+            <img src="imgs/necklace/whie/3.jpg" alt="img not found">
+            <p id="qty">3</p>
+            <p id="price">9000&nbsp;</p>
+            <p id="total">27000</p>
+            <a href="#">X</a>
+        </div>
+
+        <div class="itemContainer">
+            <img src="imgs/bangles/bangles1.jpg" alt="img not found">
+            <p id="qty">1</p>
+            <p id="price">30000</p>
+            <p id="total">30000</p>
+            <a href="#">X</a>
+        </div>
+
+        <div class="itemContainer">
+            <img src="imgs/rings/ring3.jpg" alt="img not found">
+            <p id="qty">1</p>
+            <p id="price">15000</p>
+            <p id="total">15000</p>
+            <a href="#">X</a>
+        </div>
+
+        <div class="CartFooter">
+            <p style="color: #222;"><strong>Total Bill is&nbsp;</strong> RS:11200</p>
+            <button><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Check Out</button>
+        </div>
+    </div>
+<script src="app.js"></script>
 </body>
 </html>

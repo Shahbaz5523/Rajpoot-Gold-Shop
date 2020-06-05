@@ -514,6 +514,185 @@ footer>div>li{
     font-weight: bolder;
     font-family: monospace;
 }
+
+/* CartBox styling */
+
+#cartBox{
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: auto;
+    position: fixed;
+    z-index: 1111111;
+    overflow: hidden;
+    min-height: 450px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px gray;
+    transition: transform 0.5s ease-in-out;
+    transform: translate(-50%,-50%) scale(0);
+}
+@media screen and (max-width:768px){
+    #cartBox{
+        width: 90%;
+    }
+}
+@media screen and (max-height:570px){
+    #cartBox{
+        width: 95%;
+        transform: translate(-50%,-50%) scale(0.9);
+    }
+}
+#carthead{
+    display: flex;
+    color: black;
+    cursor: grabbing;
+    padding: 15px 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#closeContainer{
+    top: -45px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    background-color: goldenrod;
+    box-shadow: 0px 0px 5px 0px gray;
+} 
+#closeContainer img{
+    left: 23px;
+    width: 23px;
+    bottom: 20px;
+    cursor: pointer;
+    position: absolute;
+    filter: invert(100%);
+}
+#closeContainer:hover{
+    transform: scale(1.1);
+}
+#closeContainer img:hover{
+    filter: invert(100%);
+}
+#carthead span{
+    min-width: 190px;
+    font-size: 1.5rem;
+    color: goldenrod;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: 'Fenix-Regular';
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+#carthead span::before{
+    left: 0;
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: url(imgs/cart/shoppingBag.svg);
+}
+.showCart{
+    transform: translate(-50%,-50%) scale(1) !important;
+}
+.hideCart{
+    transform: translate(-50%,-50%) scale(0) !important;
+}
+/* Item Container */
+.lables{
+    display: flex;
+    color: #555;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    align-items: center;
+    font-weight: bolder;
+    flex-direction: row;
+    font-family: 'Fenix-Regular';
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+}
+.itemContainer{
+    height: auto;
+    display: flex;
+    color: #555;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-around;
+}
+.itemContainer a{
+    width: 75px;
+    height: 40px;
+    color: red;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    align-items: center;
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    font-family: 'Fenix-Regular';
+    background-color: rgba(255, 0, 0, 0.05);
+}
+.itemContainer a:hover{
+    color: white;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.itemContainer:hover{
+    background-color: #f2f2f2;
+}
+.itemContainer:last-child{
+    margin-bottom: 20px;
+}
+.itemContainer img{
+    width: 50px;
+    height: 50px;
+}
+/* Cart Footer */
+
+.CartFooter{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width:503px){
+    .CartFooter p{
+        width: 100%;
+        text-align: center;
+    }
+    .CartFooter button{
+        margin: 5px;
+        width: 100% !important;
+    }
+}
+.CartFooter Button{
+    color: #222;
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background: goldenrod;
+    font-family: 'Fenix-Regular';
+    box-shadow: 0px 0px 5px 0px #999 inset;
+    background: linear-gradient(gold , goldenrod);
+}
+.CartFooter button:hover{
+    background: linear-gradient(goldenrod , gold);
+}
 /* End of the main styling */
 
 /* Responsive layout Styling */
